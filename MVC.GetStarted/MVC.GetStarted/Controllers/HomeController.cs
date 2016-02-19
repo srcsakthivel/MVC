@@ -23,6 +23,13 @@ namespace MVC.GetStarted.Controllers
             return View();
         }
 
+        public ActionResult IndexTempData()
+        {
+            TempData["Name"] = "src";
+            TempData["Email"] = "src@test.com";
+            return View();
+        }
+
         public string MyIndex()
         {
             return "String returned from the controller";
