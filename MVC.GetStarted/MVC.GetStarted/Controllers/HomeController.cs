@@ -11,6 +11,8 @@ namespace MVC.GetStarted.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            ViewBag.Name = "src";
+            ViewBag.Email = "src@test.com";
             return View();
         }
 
