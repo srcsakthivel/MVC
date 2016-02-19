@@ -16,6 +16,13 @@ namespace MVC.GetStarted.Controllers
             return View();
         }
 
+        public ActionResult IndexViewData()
+        {
+            ViewData["Name"] = "src";
+            ViewData["Email"] = "src@test.com";
+            return View();
+        }
+
         public string MyIndex()
         {
             return "String returned from the controller";
