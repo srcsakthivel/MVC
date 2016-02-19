@@ -13,5 +13,13 @@ namespace MVC.GetStarted.Controllers
         {
             return View();
         }
+
+        public string MyIndex()
+        {
+            return "String returned from the controller";
+        }
+
+
+
     }
 }
